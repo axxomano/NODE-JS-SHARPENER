@@ -1,0 +1,23 @@
+{
+  "name": "npm-js-sharpener",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axxomano/NODE-JS-SHARPENER.git"
+  },
+  "author": "Manoharan Ekambaram",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axxomano/NODE-JS-SHARPENER/issues"
+  },
+  "homepage": "https://github.com/axxomano/NODE-JS-SHARPENER#readme",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
