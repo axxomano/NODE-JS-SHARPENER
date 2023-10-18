@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sharpener Contact</title>
+</head>
+<style type="text/css">
+	body{
+		 background-image: url("/img/contact-info.svg");
+	}
+	#main{
+		margin: auto;
+		width: 50%;
+		  padding: 10px;
+	}
+	h2,p{
+		text-align: center;
+	}
+	#userForm input,#userForm select{
+		 width: 100%;
+	    height: 20px;
+	    padding: 4px;
+	    margin: 2px;
+	}
+	#userForm select{
+			height: 32px;
+			margin-left:15px;
+	}
+#full{
+	display: flex;
+
+}
+.half{ 
+ 	width:50% !important;
+ 	display: inline !important;
+ 	padding: auto;	
+ }
+
+</style>
+<body>
+	<div id="main">
+		<h2>Book a call</h2>
+		<p>Book a call slot and our representatives will call you within 1hr of selected time</p>
+		<hr>
+		<form id="userForm"action="/shop/success" method="POST">
+			<label for="name">Name</label><br>
+			<input name="name"></input><br><br>
+
+			<label for="emailId">Email</label><br>
+			<input type="email" name="emailId"></input><br><br>
+
+			<label for="phoneNum">Phone</label><br>
+			<input type="tel" name="phoneNum"></input><br><br>
+		<div id="full">
+			<div class="half">
+				<label for="dateofCall">Date</label><br>
+				<input type="date" name="dateofCall"></input>
+			</div>
+			<div class="half">
+				<label for="dateofCall">Time</label><br>
+				<select type="dropdown" name="dateofCall">
+					<option>11:00</option>
+					<option>12:00</option>
+					<option>02:00</option>
+					<option>03:00</option>
+				</select>
+			</div>
+		</div>
+
+			<br><br>
+			<button type="submit">Get a call</button>
+		</form>
+	</div>
+</body>
+</html>
