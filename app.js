@@ -1,4 +1,8 @@
 const path = require('path')
+const rootDir = require('./util/path')
+
+const productController = require('./controllers/products')
+const errorController = require('./controllers/error')
 
 const express = require('express')
 const bodyParser = require('body-parser')
@@ -16,8 +20,9 @@ app.use('/admin',adminRoutes)
 app.use('/shop',shopRoutes)
 app.use('/contactus',contactusRoutes)
 
-app.use((req,res,next)=>{
-    res.status(404).sendFile(path.join(__dirname,'views','404.html'))
-});
+app.use(errorController.notFoundController);
+
+app.use('/',productController.homeController);
+
 
 app.listen(3000)
